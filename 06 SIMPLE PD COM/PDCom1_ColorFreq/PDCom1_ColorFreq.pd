@@ -1,0 +1,13 @@
+#N canvas -4 74 542 382 12;
+#X obj 211 78 oscparse;
+#X obj 177 206 phasor~;
+#X obj 197 29 netreceive -u -b 32000;
+#X obj 187 118 f;
+#X floatatom 211 156 5 0 0 0 - - - 0;
+#X obj 161 294 output~;
+#X connect 0 0 3 0;
+#X connect 1 0 5 0;
+#X connect 1 0 5 1;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
